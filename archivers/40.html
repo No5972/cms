@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel=manifest href=/cms/manifest.json>
+  <meta charset="UTF-8">
+<meta name="renderer" content="webkit"/>
+<meta name="force-rendering" content="webkit"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+
+<!-- MODIFIED BY 5972 -->
+  <script data-ad-client="ca-pub-3179887013052109" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/social-share.js/1.0.16/css/share.min.css"></link>
+  <script src="https://cdn.bootcdn.net/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+  
+  <link rel="stylesheet" href="/cms/css/main.css">
+  <link rel="stylesheet" href="/cms/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/cms/lib/animate-css/animate.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/static/api/css/share.min.css">
+  <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/No5972/Live2D@25/live2d/css/live2d.css" />
+  <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_1939188_e51h371envj.css">
+  <!-- <link rel="stylesheet" href="https://fonts.font.im/css?family=Noto%20Serif%20TC&display=swap&subset=latin,latin-ext"/> -->
+  <!-- <link rel="stylesheet" href="https://fonts.font.im/css?family=Noto%20Serif%20SC&display=swap&subset=latin,latin-ext"/> -->
+  <link rel="stylesheet" href="https://fonts.geekzu.org/css?family=Noto+Serif+TC:Regular,Bold"/>
+  <link rel="stylesheet" href="https://fonts.geekzu.org/css?family=Noto+Serif+SC:Regular,Bold"/>
+  <link rel="stylesheet" href="https://fonts.geekzu.org/css?family=ZCOOL+KuaiLe"/>
+  <style>
+    #landlord {
+      bottom: -100px;
+      width: 200px;
+      height: 550px;
+      left: 0;
+    }
+    
+    #live2d {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+  <!-- <script src="https://fastly.jsdelivr.net/gh/No5972/live2d-widget@20/autoload.js"></script> -->
+  
+  
+  <style>
+/*
+   @font-face
+    {
+      font-family: CCKT;
+      src: url('https://cdn.jsdmirror.com/gh/No5972/Live2D@12/cckt.woff');
+    }
+*/
+    
+    @font-face
+    {
+      font-family: DIN-Bold;
+      src: url('https://cdn.jsdmirror.com/gh/No5972/Live2D@10/din-bold-2.otf');
+    }
+
+    /* @font-face
+    {
+        font-family: FreeSerif;
+        src: url('https://cdn.jsdmirror.com/gh/No5972/Live2D@22/FreeSerif.otf');
+        font-style: normal;
+        font-weight: normal;
+    }
+	
+@font-face
+{
+    font-family: FreeSerif;
+    src: url('https://cdn.jsdmirror.com/gh/No5972/Live2D@22/FreeSerif.otf');
+    font-style: normal;
+    font-weight: normal;
+}
+    
+@font-face
+{
+    font-family: FreeSerif;
+    src: url('https://cdn.jsdmirror.com/gh/No5972/Live2D@22/FreeSerifBold.otf');
+    font-style: normal;
+    font-weight: bold;
+}
+    
+@font-face
+{
+    font-family: FreeSerif;
+    src: url('https://cdn.jsdmirror.com/gh/No5972/Live2D@22/FreeSerifItalic.otf');
+    font-style: italic;
+    font-weight: normal;
+}
+    
+@font-face
+{
+    font-family: FreeSerif;
+    src: url('https://cdn.jsdmirror.com/gh/No5972/Live2D@22/FreeSerifBoldItalic.otf');
+    font-style: italic;
+    font-weight: bold;
+}
+
+*/
+
+    .message {
+      font-family: 'ZCOOL KuaiLe';
+    }
+  </style> 
+  <style>
+    .pace .pace-progress {
+      background: #fff !important;
+    }
+  </style>
+<!-- MODIFIED BY 5972 -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/cms/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/cms/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/cms/images/favicon.ico">
+  <link rel="mask-icon" href="/cms/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/cms/css/main.css">
+
+
+<link rel="stylesheet" href="//unpkg.com/@fortawesome/fontawesome-free@5.13.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="/cms/lib/animate-css/animate.min.css">
+  <link rel="stylesheet" href="//unpkg.com/pace-js@1.2.4/themes/blue/pace-theme-minimal.css">
+  <script data-pace-options='{ "ajax": false }' src="//unpkg.com/pace-js@1.2.4/pace.min.js"></script>
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"no5972.moe","root":"/cms/","scheme":"Pisces","version":"8.0.0-rc.4","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="在半路出家的程序员队伍里，我的经历应该比较有代表性：先在一所师范专科学校接受了三年中文教育，毕业后开始在一个小镇教书，后来通过三年的自学，由一个计算机知识为零的“电脑盲”，拿到了软件水平考试中的高级程序员级别证书，并通过了全国计算机四级考试（成绩优秀）。其中的经验教训有很多，写下来供大家参考。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="文科生如何成为高级程序员">
+<meta property="og:url" content="https://no5972.moe/cms/archivers/40.html">
+<meta property="og:site_name" content="No.5972 Publishment Website">
+<meta property="og:description" content="在半路出家的程序员队伍里，我的经历应该比较有代表性：先在一所师范专科学校接受了三年中文教育，毕业后开始在一个小镇教书，后来通过三年的自学，由一个计算机知识为零的“电脑盲”，拿到了软件水平考试中的高级程序员级别证书，并通过了全国计算机四级考试（成绩优秀）。其中的经验教训有很多，写下来供大家参考。">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://img.shields.io/badge/%E4%B8%AD%E5%9B%BD%E7%94%B5%E8%84%91%E6%95%99%E8%82%B2%E6%8A%A5%20%C2%B7%20%E5%88%98%E5%AE%97%E5%87%A1-%E7%94%B1%E2%80%9C%E7%94%B5%E8%84%91%E7%9B%B2%E2%80%9D%E6%88%90%E4%B8%BA%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%AF%AD%E6%96%87%E6%95%99%E5%B8%88-brightgreen">
+<meta property="article:published_time" content="2020-10-19T09:30:00.000Z">
+<meta property="article:modified_time" content="2021-07-10T02:52:23.100Z">
+<meta property="article:author" content="No.5972">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img.shields.io/badge/%E4%B8%AD%E5%9B%BD%E7%94%B5%E8%84%91%E6%95%99%E8%82%B2%E6%8A%A5%20%C2%B7%20%E5%88%98%E5%AE%97%E5%87%A1-%E7%94%B1%E2%80%9C%E7%94%B5%E8%84%91%E7%9B%B2%E2%80%9D%E6%88%90%E4%B8%BA%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%AF%AD%E6%96%87%E6%95%99%E5%B8%88-brightgreen">
+
+<link rel="canonical" href="https://no5972.moe/cms/archivers/40.html">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>文科生如何成为高级程序员 | No.5972 Publishment Website</title>
+  <script>
+      if (!!window.ActiveXObject || "ActiveXObject" in window) {
+        document.write('Please note that this site no longer supports Internet Explorer. Please use <a href=\"https://www.microsoft.com/edge\">Microsoft Edge</a> or other browsers to browse this site.');
+        window.onload = function () {
+          $("style,link").remove();
+        }
+        console.log("IE Found!");
+        
+      }
+
+  </script>
+  <script>
+function loadJS( url, callback ){
+    var script = document.createElement('script'),fn = callback || function(){};
+    script.type = 'text/javascript';
+    //IE
+    if(script.readyState){
+        script.onreadystatechange = function(){
+            if( script.readyState == 'loaded' || script.readyState == 'complete' ){
+                script.onreadystatechange = null;
+                fn();
+            }
+        };
+    }else{
+        //其他浏览器
+        script.onload = function(){
+            fn();
+        };
+    }
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+}
+
+
+
+
+  </script>
+  <style>
+#switchBackgroundBtn {
+ right: 30px;
+ opacity: 0 !important;
+ transition: opacity 0.5s;
+}
+
+#switchBackgroundBtn {
+
+} 
+
+#switchBackgroundBtn:hover {
+ opacity: 1 !important;
+} 
+
+@media (max-width: 991px) {
+ #switchBackgroundBtn {
+  right: 20px;
+ } 
+}
+  </style>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/cms/feed.xml" title="No.5972 Publishment Website" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+    <!-- <div style="position:fixed;width: 100%;height: 100%;background: url(https://cdndata.fairyabc.com/attachment/album/201809/06/161517g07y9z06yfunuuub.jpg);opacity: 0.25; background-size:cover ; background-attachment:fixed; pointer-events: none;" id="customBackground"></div> -->
+    <div style="position:fixed;width: 100%;height: 100%;background: url(https://img.xjh.me/random_img.php?type=bg&ctype=acg&return=302);opacity: 0.25; background-size:cover ; background-attachment:fixed; pointer-events: none; display: none;" id="randomBackground"></div>
+    <!-- <div style="position:fixed;width: 100%;height: 100%;background: url(https://cdn.jsdelivr.net/gh/No5972/Live2D@13/161517g07y9z06yfunuuub.jpg);opacity: 0.25; background-size:cover ; background-attachment:fixed; pointer-events: none; display: block;" id="customBackground"></div> -->
+    <div style="position:fixed;width: 100%;height: 100%;background: url(/cms/static/bg250217-2.jpg);opacity: 0.25; background-size:cover ; background-attachment:fixed; pointer-events: none; display: block;" id="customBackground"></div>
+    <div class="back-to-top1" id="switchBackgroundBtn" onclick="toggleRandomBackground()" style="bottom: 60px; box-sizing: border-box; color: #fff; padding: 0 6px; transition: bottom 0.2s ease-in-out; background: #007ff3; cursor: pointer; opacity: 0.6; position: fixed; z-index: 1300; width: 24px; font-size: 12px;"><i class="fa fa-paint-brush"></i></div>
+    <div id="cookie-alert" class="cookie-alert" style="position: absolute; width: 100%; height: fit-content; background: white; left: 0; top: 0; display: none; z-index: 1000;">We use cookies to improve your experience on our website. By browsing this website, you agree to our use of cookies. <a href="#" onclick="agreeCookies()">OK</a>&nbsp;|&nbsp;<a href="/cms/cookie-notice">Learn More &gt;</a></div>
+    <script>
+      
+
+      if(!localStorage.getItem('mask')){
+       document.getElementById("cookie-alert").style.display = "block";
+      }
+
+      function refreshRandomBackgroundStatus() {
+       document.getElementById('randomBackground').style.display = "block";
+       if (localStorage.getItem('randomBackground') == 'true') {
+        document.getElementById('randomBackground').style.display = "block";
+        document.getElementById('customBackground').style.display = "none";
+       } else {
+        document.getElementById('randomBackground').style.display = "none";
+        document.getElementById('customBackground').style.display = "block";
+       }
+      }
+
+      function toggleRandomBackground() {
+       if (localStorage.getItem('randomBackground') == null || localStorage.getItem('randomBackground') == 'false') {
+        localStorage.setItem('randomBackground', 'true');
+       } else {
+        localStorage.setItem('randomBackground', 'false');
+       }
+       refreshRandomBackgroundStatus();
+      }
+
+      refreshRandomBackgroundStatus();
+      
+      function agreeCookies() {
+        document.getElementById("cookie-alert").style.display = "none";
+        localStorage.setItem('mask','true');
+      }
+
+      window.onload = function () {
+        // IE Alert
+        if (!!window.ActiveXObject || "ActiveXObject" in window) {
+         var p = document.createElement("div");
+         p.style.color="#000";
+         p.style.position="absolute";
+         p.style.width="100%";
+         p.style.height="fit-content";
+         p.style.background="white";
+         p.style.left=0;
+         if(!localStorage.getItem('mask')){
+           p.style.top="32px";
+         } else {
+           p.style.top=0;
+         }
+         p.style.zIndex=1000;
+         p.innerHTML = 'Please note that this site no longer supports Internet Explorer. Please use <a href="https://www.microsoft.com/edge" target="_blank" rel="noopener">Microsoft Edge</a> or other browsers to browse this site.'
+         document.body.insertBefore(p, document.getElementsByClassName("cookie-alert")[0]);
+        }
+
+        const selects = document.querySelectorAll('.lang-select');
+        selects.forEach(sel => {
+          sel.addEventListener('change', () => {
+            const target = sel.options[sel.selectedIndex];
+            sessionStorage.setItem("lang", target.label);
+          });
+        });
+        
+        $("a[target=_blank]").each (function () { $(this).attr("onclick", "window.open('/cms/confirm.html?' + encodeURI($(this).attr(\"href\"))) ; return false;");} )
+
+        var pageLoadTime = new Date().getTime()  - window.performance.timing.navigationStart;
+        if (pageLoadTime > 10000 && location.pathname == "/cms/") {
+         loadJS("https://cdn.bootcdn.net/ajax/libs/layer/3.1.1/layer.min.js?v=" + new Date().getTime(), function () {
+          layer.msg('本次访问网站消耗了 ' + pageLoadTime + ' 毫秒，访问较慢，推荐访问国内镜像站 https://no5972.gitee.io ，访问更快。', {
+            time: 10000, //20s后自动关闭
+            btn: ['确认', '取消'],
+            yes: function () {
+              location.href="https://no5972.gitee.io/cms";
+            }
+          })
+         })
+        }
+      }
+
+      if (sessionStorage.getItem("lang") == "简体中文" && location.href.lastIndexOf("zh-CN") == -1) { 
+        location.href = location.href.replace("/cms/", "/cms/zh-CN/");
+      }
+
+/*
+window.onload = function () {
+	if (navigator.userAgent.lastIndexOf("Macintosh") != -1 || navigator.userAgent.lastIndexOf("Windows NT") != -1) {
+	if (navigator.platform.lastIndexOf("Linux arm") == -1) { // 手机浏览器不支持视频透明
+		var v = document.createElement("video");
+		v.src = "https://cdn.jsdelivr.net/gh/No5972/Live2D@master-1/2ce423abb276a932119.mp4";	
+		v.loop = true;
+		v.autoplay = true;
+		v.currentTime = 40;
+		$(v).css("height" ,"100%");
+		$(v).css("width" ,"100%");
+		$(v).css("object-fit" ,"fill");
+
+
+		$("#customBackground").html("");
+		$("#customBackground").append(v);
+		$("#customBackground").find("video")[0].play();
+	}
+	}
+}
+*/
+
+    </script>
+    <!-- <script>
+      (function(d) {
+        var config = {
+          kitId: 'cwe3tnz',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script> -->
+
+    <main class="main">
+
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+        <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+        <span class="toggle-line toggle-line-first"></span>
+        <span class="toggle-line toggle-line-middle"></span>
+        <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/cms/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">No.5972 Publishment Website</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Easier than easy.</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-return">
+
+    <a href="https://no5972.github.io/" rel="noopener" target="_blank"><i class="fa fa-reply fa-fw"></i>Return</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/cms/about.html" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/cms/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/cms/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+        <li class="menu-item menu-item-toolkit">
+
+    <a href="/cms/archivers/4.html" rel="section"><i class="fa fa-wrench fa-fw"></i>Toolkit</a>
+
+  </li>
+        <li class="menu-item menu-item-donate">
+
+    <a href="https://afdian.com/@wujiuqier" rel="noopener" target="_blank"><i class="fa fa-heart fa-fw"></i>Donate</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar" style="background: #fff2; padding: 20px 0;">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active" style="display: contents;">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <section class="post-toc-wrap sidebar-panel">
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#关于学习"><span class="nav-text"> 关于学习</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#坚定的信心"><span class="nav-text"> 坚定的信心</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选好教材"><span class="nav-text"> 选好教材</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#学会不求甚解"><span class="nav-text"> 学会“不求甚解”</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重点突破"><span class="nav-text"> 重点突破</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多上机"><span class="nav-text"> 多上机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多做试题"><span class="nav-text"> 多做试题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#关于四级考试"><span class="nav-text"> 关于四级考试</span></a></li></ol></div>
+      </section>
+      <!--/noindex-->
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="No.5972"
+      src="https://no5972.moe/cms/static/32865305.jpg">
+  <p class="site-author-name" itemprop="name">No.5972</p>
+  <div class="site-description" itemprop="description">No.5972 is silly B</div>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/No5972" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;No5972" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://stackoverflow.com/users/14547429/no-5972" title="StackOverflow → https:&#x2F;&#x2F;stackoverflow.com&#x2F;users&#x2F;14547429&#x2F;no-5972" rel="noopener" target="_blank"><i class="fab fa-stack-overflow fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:wujiuqier#foxmail.com" title="E-Mail → mailto:wujiuqier#foxmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/cms/feed.xml" title="RSS → &#x2F;feed.xml"><i class="fa fa-rss fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.cnblogs.com/wujiuqier" title="CNBlogs → https:&#x2F;&#x2F;www.cnblogs.com&#x2F;wujiuqier" rel="noopener" target="_blank"><i class="iconfont icon-CN_cnblogs fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/12551304" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;12551304" rel="noopener" target="_blank"><i class="iconfont icon-bilibili-fill fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/wujiuqier" title="Zhihu → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;wujiuqier" rel="noopener" target="_blank"><i class="iconfont icon-zhihu fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://tieba.baidu.com/home/main?un=wujiuqier" title="Tieba → https:&#x2F;&#x2F;tieba.baidu.com&#x2F;home&#x2F;main?un&#x3D;wujiuqier" rel="noopener" target="_blank"><i class="iconfont icon-tieba fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.pixiv.net/en/users/17358156/" title="Pixiv → https:&#x2F;&#x2F;www.pixiv.net&#x2F;en&#x2F;users&#x2F;17358156&#x2F;" rel="noopener" target="_blank"><i class="iconfont icon-pixiv fa-fw"></i></a>
+      </span>
+  </div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/cms/archives/">
+        
+          <span class="site-state-item-count">175</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+
+    
+                <nav class="site-nav">
+                  <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/cms/categories/Animation/">Animation</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/AtoW/">AtoW</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/Automation/">Automation</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/C/">C#</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/C-C/">C/C++</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/Github/">Github</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/Hardware/">Hardware</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/Java/">Java</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/JavaScript/">JavaScript</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/Mathematics/">Mathematics</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/Moving-Away-from-Flash/">Moving Away from Flash</a><span class="category-list-count">21</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/Other/">Other</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/PowerShell/">PowerShell</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/Python/">Python</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/Web-Building/">Web Building</a><span class="category-list-count">24</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/Webapp/">Webapp</a><span class="category-list-count">45</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/jekyll-update/">jekyll update</a><span class="category-list-count">4</span></li></ul>
+                </nav>
+                <nav class="site-nav" style="width: 80%; overflow-x: hidden;">
+                  <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/cms/archivers/171.html">仅作笔记用：其他盘的页面文件突然不见了怎么办</a></li><li class="post-list-item"><a class="post-list-link" href="/cms/archivers/170.html">实用为先! 图说Photoshop 6.0轻松入门四步走</a></li><li class="post-list-item"><a class="post-list-link" href="/cms/archivers/169.html">关于 Win7 运行豆包桌面版提示无法定位程序输入点，无法运行的问题</a></li><li class="post-list-item"><a class="post-list-link" href="/cms/archivers/168.html">C 语言 手动给 Win9x/ME 蓝屏</a></li><li class="post-list-item"><a class="post-list-link" href="/cms/archivers/167.html">仅作笔记用：GPT4All 本地部署 DeepSeek R1 模型，简明说明（手动下载模型）</a></li><li class="post-list-item"><a class="post-list-link" href="/cms/archivers/166.html">大学 C 语言在线 PTA 平台编译提示警告未使用 scanf 返回值的问题</a></li></ul>
+                </nav>
+              
+  </nav>
+</div>
+
+
+
+      </section>
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </header>
+
+      
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/No5972" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div id="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+      <div class="main-inner">
+        
+
+        <div class="content post posts-expand">
+          
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://no5972.moe/cms/archivers/40.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://no5972.moe/cms/static/32865305.jpg">
+      <meta itemprop="name" content="No.5972">
+      <meta itemprop="description" content="No.5972 is silly B">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="No.5972 Publishment Website">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+          文科生如何成为高级程序员
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-10-19 17:30:00 | Modified: 2021-07-10 10:52:23" itemprop="dateCreated datePublished" datetime="2020-10-19T17:30:00+08:00">2020-10-19 17:30:00</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/cms/categories/Other/" itemprop="url" rel="index"><span itemprop="name">Other</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>来源：<a href="http://www.exam8.com/computer/djks/xinde/200503/8400.html" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/%E4%B8%AD%E5%9B%BD%E7%94%B5%E8%84%91%E6%95%99%E8%82%B2%E6%8A%A5%20%C2%B7%20%E5%88%98%E5%AE%97%E5%87%A1-%E7%94%B1%E2%80%9C%E7%94%B5%E8%84%91%E7%9B%B2%E2%80%9D%E6%88%90%E4%B8%BA%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%AF%AD%E6%96%87%E6%95%99%E5%B8%88-brightgreen" alt="中国电脑教育报 · 刘宗凡-由“电脑盲”成为高级程序员的语文教师" /></a></p>
+<p>在半路出家的程序员队伍里，我的经历应该比较有代表性：先在一所师范专科学校接受了三年中文教育，毕业后开始在一个小镇教书，后来通过三年的自学，由一个计算机知识为零的“电脑盲”，拿到了软件水平考试中的高级程序员级别证书，并通过了全国计算机四级考试（成绩优秀）。其中的经验教训有很多，写下来供大家参考。</p>
+<h1 id="关于学习"><a class="markdownIt-Anchor" href="#关于学习"></a> 关于学习</h1>
+<h2 id="坚定的信心"><a class="markdownIt-Anchor" href="#坚定的信心"></a> 坚定的信心</h2>
+<p>自学计算机是需要一定的条件的，现在回想起来，我当时的条件不算好：第一，没有基础。大专学的是中文，而且完全没有接触过电脑，对计算机没有一点感性认识，甚至不知道学电脑要学些什么……第二，环境很闭塞。第三，缺少硬件条件。开始的半年我没有电脑，只能纸上编程；一边工作一边学习，而且总感觉时间不够。尽管困难重重，但我确信一条：计算机知识是一门技术学科，不是一门艺术；可能有人终其一生，也不能成为一名艺术家，但每个人通过努力，都是可以掌握好一门技术的。正是因为有这样坚定的信心，我才能够在三年的时间里，克服了常人难以想像的困难，终于达到了自己的目标。</p>
+<h2 id="选好教材"><a class="markdownIt-Anchor" href="#选好教材"></a> 选好教材</h2>
+<p>没人指导自己学习，选一些好的教材就显得非常重要了。开始我也不知道什么书好，见什么买什么。后来发现一些大学教材内容很系统，而且也有一定的权威性。我后来选的就是清华大学计算机系的教材。学完教材后，我开始研究三本软件水平考试的统编教材，如果一开始就看统编教材，会觉得书里结论大多没有详细的阐述，很难理解和记忆，但先系统学完教材后，你会发现统编教材起了一个很好的综合作用。</p>
+<h2 id="学会不求甚解"><a class="markdownIt-Anchor" href="#学会不求甚解"></a> 学会“不求甚解”</h2>
+<p>我这里说的“不求甚解”并不是指不认真学习。自学电脑最怕钻牛角尖：看书时一个问题不明白，就在那里卡住，非解决它不可——这样的方法我是不赞成的。首先，它会严重打击你的自信心，使你丧失继续学习下去的兴趣；其次，这样浪费了许多时间。因此学习时要给自己留一些“不懂”的余地。例如第一遍读书时要允许自己似懂非懂，用规定的时间(例如两个星期)把它看完，然后开始第二遍学习。开始时许多不明白的东西，这次就容易理解多了。</p>
+<h2 id="重点突破"><a class="markdownIt-Anchor" href="#重点突破"></a> 重点突破</h2>
+<p>计算机的专业课程很多，如果要通过软件水平考试，我认为一定要抓住《数据结构》这门核心课程。软件水平考试最难通过的部分是下午试题，其中很多内容涉及数据结构中的知识，大部分试题都是数据结构的演化。只有对线性表、栈和队列、树、查找、排序等问题非常精通，编程的难题才能迎刃而解。在1997年参加程序员考试时，最后一道题目整体上我看得不是很懂，但由于我对数据结构比较熟悉，我把需要填空的上下两句仔细看了看，就知道是实现一个链表的问题，而链表的操作我十分熟练，我自信地填上了正确答案。数据结构应该学到什么程度呢？我认为，基本上能用高级语言来实现各种数据结构就差不多了。</p>
+<p>重点突破的另一个含义是扬长避短：一个非计算机专业的考生，很难做到知识十分全面。特别是对一个文科生来说，数学是心头永远的痛，而我的英语也丢了多年。是花费巨大的精力去补数学和英语，还是把精力集中在其他科目？经过权衡，我选择了后者。在程序员和高程考试中，上午试题的前十一道，我基本上得了满分，数学和英语对我的影响并不大。我的顺利过关，就是舍车保帅策略的成功运用。当然这只是针对应试而言，如果你现在还有机会学习数学和英语，还是应当尽量把它们学好。</p>
+<h2 id="多上机"><a class="markdownIt-Anchor" href="#多上机"></a> 多上机</h2>
+<p>虽然软件水平考试下午试题只要填上程序所缺的语句，不用上机调试，但要想做对，就离不开平时多上机练习了。有时你看书时觉得懂了，但上机时却会发现一个简单的程序也容易漏洞百出。我把统编教材《程序设计》中的程序上机调试了两次：第一次基本上是照书打字，边打边想；第二次是先看题自己做，实在不会时才对照一下教材，看自己为什么做不出来。调试程序的过程中会发现C语言中的许多精妙的地方，一些考试时容易忽略的细节问题也都暴露出来，对考试十分有利，下午试题考的就是你的思维是否严密。</p>
+<h2 id="多做试题"><a class="markdownIt-Anchor" href="#多做试题"></a> 多做试题</h2>
+<p>我不提倡多做模拟题，因为模拟题的难度很难把握——不是太难就是太易，对考试帮助不是很大。但一定要把近几年的正式试题找来做，最好能做十份左右。虽然每年的考题都不同，但你一定能够在历年的考题中发现一些有规律的东西——它要考核你什么样的能力？它考一些什么知识点？这样，你在复习时就能做到有的放矢。</p>
+<h1 id="关于四级考试"><a class="markdownIt-Anchor" href="#关于四级考试"></a> 关于四级考试</h1>
+<p>四级考试难度相当大，据说几年通过的人数寥寥无几。据我看，四级的上机考试题相对程序员考试下午试题来说还是容易的，关键在于笔试有120道题，所以考到的内容十分广泛、细致，并且有三分之一的题目是用英语出的。这要求你在学习时一定要注意每一个细节问题，对计算机的专业术语的英语表达方式要熟悉。笔试还有一道论述题，其内容并不完全出自书本，需要你有比较流畅的表达方式，还要对计算机的最新发展动向有一定了解，才能圆满地解决论述题。</p>
+<p>我在三年努力下，从初级程序员考试到高级程序员考试，从二级、三级（B）到四级，一年一个台阶，顺利通过了软件水平考试和等级考试中的最高级别的部分。希望我的这些经验能帮助那些刚起步的朋友顺利迈入计算机的殿堂。</p>
+<link rel="stylesheet" href="/cms/css/spoiler.css" type="text/css"><script src="/cms/js/spoiler.js" type="text/javascript" async></script>
+    </div>
+
+    
+    
+    
+         <div style="color: #888a; font-family: DIN-Bold; background: #eee5; padding: 10px; margin-bottom: 10px;">Publishing this article is for the purpose of conveying more information, and does not mean agreeing with its views or confirming its description, nor does it mean that we are responsible for its authenticity. Should you have any questions or doubts about the content of the post, please don't hesitate to contact us. We will respond to you and deal with it as quickly as possible.</div>
+
+      <footer class="post-footer">
+
+        
+  <!-- <div class="addthis_inline_share_toolbox">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=SHUTDOWN" async="async"></script>
+  </div> -->
+  <div class="social-share" data-sites="weibo,wechat,qq,qzone,facebook,twitter,linkedin" data-title='仅作笔记用：其他盘的页面文件突然不见了怎么办' data-description='DNF 玩家如果电脑只有 16GB 内存的话，通常需要手动设置页面文件，才能保证游戏稳定运行。而 C 盘的页面文件一般不会掉，但是有时候会出现其他盘的页面文件莫名其妙消失的情况，而此时去高级系统设置查看，发现页面文件却还是之前设置好的。两个地方显示的情况是不一样的。这种情况可以手动重新创建一个页面文件，看看能不能恢复。' style="text-align: center; margin: 1rem 0;"></div>
+  <div class="ad" style="text-align: center;">
+    <a href="https://curl.qcloud.com/JuZ5tVw9" target="_blank"><img src="/cms/static/ad.jpg"></img></a>
+  </div>
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/cms/archivers/39.html" rel="prev" title="一个程序员给初学编程人的建议">
+      <i class="fa fa-chevron-left"></i> 一个程序员给初学编程人的建议
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/cms/archivers/41.html" rel="next" title="Chrome/Chromium即将停止支持Flash的详细事宜">
+      Chrome/Chromium即将停止支持Flash的详细事宜 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+        </div>
+        
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2011 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="author" itemprop="copyrightHolder">No.5972</span>
+</div>
+
+<div class="copyright" style="
+    vertical-align: middle;
+">
+<a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/" style="
+    padding-right: 10px;
+    border: none;
+"><img alt="Creative Commons License" style="border-width:0;margin: unset;/* max-width: unset; */display: inline;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAABGdBTUEAANbY1E9YMgAAAJZQTFRF////7u7u3d3dys7KzMzMyMzIxsrGxcbFur+6u7u7s7iyq7GqqqqqmZmZlJmTj5CPiIiIh4eHhoaGgICAfYJ9d3d3cnZxZ2tnZmZmW15bVVVVS0xLREREQ0NDQkJCQUJBOz07OTs5MzMzMTMxLjAuJygnJCUjIiIiISEhICAgGRkZERERDxAPDg4ODQ4NDQ0NDQ0MAAAADbeuvgAAANNJREFUeNqtk2kTgiAQhl/KzlWzgw6j+7Ayq/3/f64hTPNLNskOMMwuPLzsAtiygWHVNJC0TThIXSrxierXv/UZoJ8E2SHqQNQeVgSuT7lqh2dEjXk14C2AE7ESiiMHakdU773igF5keu5AKXDEHUQhpIyF50LeiNotEzct4+XO78AxO0JXJdzqO8uEqNvMBKUaYcbXDD8qVNNYSA/yXlRYEISfFNI9gBvzVCje1rDYF3L4sf+d03Lg5my5yv6jnwGXRwvvkMY8SHmrS9WfYvsvW7YnkDuZd7/ChBQAAAAASUVORK5CYII="></a>
+    <p style="display:inline-block;margin:0;">Original content of this site, except those works that are given appropriate credits, is licensed under a<br> <a rel="license noopener" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+</div>
+  <div class="powered-by">
+    <a href="/cms/cookie-notice">Cookie Notice</a>
+    &nbsp;|&nbsp;
+    <a href="https://github.com/No5972/cms_source" target="_blank" rel="noopener">Site Source</a>
+    &nbsp;|&nbsp;Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 4.2.1 & <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 8.0.0-rc.4
+  </div>
+
+        
+<br>
+<span id="daysCount"></span>
+<script>
+  document.getElementById("daysCount").innerText = " " + parseInt(Math.abs(new Date()  -  new Date("2018-11-14"))  /  1000  /  60  /  60  /24)   + " days since this blog's being founded";
+</script>
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="//unpkg.com/animejs@3.1.0/lib/anime.min.js"></script>
+  <script src="//unpkg.com/medium-zoom@1/dist/medium-zoom.min.js"></script>
+
+
+<script src="//unpkg.com/hexo-theme-next@8.0.0-rc.5/source/js/utils.js"></script>
+  <script src="//unpkg.com/hexo-theme-next@8.0.0-rc.5/source/js/motion.js"></script>
+
+
+<script src="//unpkg.com/hexo-theme-next@8.0.0-rc.5/source/js/next-boot.js"></script>
+
+  
+
+
+
+
+  
+<script src="//unpkg.com/hexo-theme-next@8.0.0-rc.4/source/js/local-search.js"></script>
+
+
+
+<!--
+<div id="landlord">
+    <div class="message" style="opacity:0; left: 10px;"></div>
+    <!-- <canvas id="live2d" width="280" height="550" class="live2d"></canvas> --
+    <iframe src="https://test-review.cdn.bcebos.com/mmd/index.html" frameborder="no" style="width: 100%; height: 100%"></iframe>
+    <div class="hide-button" style="top: 50px !important">隐藏</div>
+</div>
+-->
+
+<script src="https://www.unpkg.com/jquery@3.5.1/dist/jquery.min.js"></script>
+
+<script src="https://unpkg.com/jquery.marquee@1.5.0/jquery.marquee.min.js" type="text/javascript"></script>
+<div class="marquee-container" style="position: fixed; width: 100%; height: 30px; color: black; background-color: white; left: 0; bottom: 0;">
+<div class="marquee">推进创文常态化 共建文明襄阳城　·　🄽🄾5️⃣9️⃣7️⃣2️⃣　·　做文明襄阳人 建文明襄阳城 凝聚文明正能量 筑梦千年古襄阳　·　🄽🄾5️⃣9️⃣7️⃣2️⃣　·　创建全国文明城市 加快建设汉江流域中心城市　·　🄽🄾5️⃣9️⃣7️⃣2️⃣　·　讲文明 树新风　·　🄽🄾5️⃣9️⃣7️⃣2️⃣　·　用微笑融化陌生 用文明美化襄阳　·　🄽🄾5️⃣9️⃣7️⃣2️⃣　·　争当文明使者 播撒文明新风</div>
+</div>
+<script>$('.marquee').marquee({duration: 25000});</script>
+
+<!-- mmd3d begin -->
+<script type="text/javascript">
+    var message_Path = 'https://fastly.jsdelivr.net/gh/No5972/Live2D@25/live2d/'
+    var home_Path = 'https://no5972.github.io/cms/'  //此处修改为你的域名，必须带斜杠
+</script>
+<script type="text/javascript" src="https://fastly.jsdelivr.net/gh/No5972/Live2D@25/live2d/js/message.js"></script>
+<!-- mmd3d end -->
+
+<!-- public live2d start -->
+<!--
+<script type="text/javascript">
+    var message_Path = 'https://fastly.jsdelivr.net/gh/No5972/Live2D@24/live2d/'
+    var home_Path = 'https://no5972.github.io/cms/'  //此处修改为你的域名，必须带斜杠
+</script>
+<script type="text/javascript" src="https://fastly.jsdelivr.net/gh/No5972/Live2D@11/live2d/js/live2d.js"></script>
+<script type="text/javascript" src="https://fastly.jsdelivr.net/gh/No5972/Live2D@11/live2d/js/message.js"></script>
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<script type="text/javascript">
+    loadlive2d("live2d", "https://fastly.jsdelivr.net/gh/QiShaoXuan/live2DModel@1.0.0/live2d-widget-model-miku/assets/miku.model.json");
+    $("#landlord").draggable();
+</script>
+-->
+<!-- public live2d end -->
+
+
+
+
+<script>
+    $(document).on('mouseenter', 'button:contains(Donate)', function(){
+        $("#post-reward").show();
+    }).on('mouseleave', 'button:contains(Donate)', function(){
+        $("#post-reward").hide();
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+<script>if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/cms/sw.js?t=1751964886568')
+    .then(function () {console.log('ServiceWorker Register Successfully.')})
+    .catch(function (e) {console.error(e)});
+}
+</script></body>
+</html>
