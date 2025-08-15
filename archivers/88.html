@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel=manifest href=/cms/manifest.json>
+  <meta charset="UTF-8">
+<meta name="renderer" content="webkit"/>
+<meta name="force-rendering" content="webkit"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+
+<!-- MODIFIED BY 5972 -->
+  <script data-ad-client="ca-pub-3179887013052109" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/social-share.js/1.0.16/css/share.min.css"></link>
+  <script src="https://cdn.bootcdn.net/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+  
+  <link rel="stylesheet" href="/cms/css/main.css">
+  <link rel="stylesheet" href="/cms/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/cms/lib/animate-css/animate.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/static/api/css/share.min.css">
+  <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/No5972/Live2D@25/live2d/css/live2d.css" />
+  <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_1939188_e51h371envj.css">
+  <!-- <link rel="stylesheet" href="https://fonts.font.im/css?family=Noto%20Serif%20TC&display=swap&subset=latin,latin-ext"/> -->
+  <!-- <link rel="stylesheet" href="https://fonts.font.im/css?family=Noto%20Serif%20SC&display=swap&subset=latin,latin-ext"/> -->
+  <link rel="stylesheet" href="https://fonts.geekzu.org/css?family=Noto+Serif+TC:Regular,Bold"/>
+  <link rel="stylesheet" href="https://fonts.geekzu.org/css?family=Noto+Serif+SC:Regular,Bold"/>
+  <link rel="stylesheet" href="https://fonts.geekzu.org/css?family=ZCOOL+KuaiLe"/>
+  <style>
+    #landlord {
+      bottom: -100px;
+      width: 200px;
+      height: 550px;
+      left: 0;
+    }
+    
+    #live2d {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+  <!-- <script src="https://fastly.jsdelivr.net/gh/No5972/live2d-widget@20/autoload.js"></script> -->
+  
+  
+  <style>
+/*
+   @font-face
+    {
+      font-family: CCKT;
+      src: url('https://cdn.jsdmirror.com/gh/No5972/Live2D@12/cckt.woff');
+    }
+*/
+    
+    @font-face
+    {
+      font-family: DIN-Bold;
+      src: url('https://cdn.jsdmirror.com/gh/No5972/Live2D@10/din-bold-2.otf');
+    }
+
+    /* @font-face
+    {
+        font-family: FreeSerif;
+        src: url('https://cdn.jsdmirror.com/gh/No5972/Live2D@22/FreeSerif.otf');
+        font-style: normal;
+        font-weight: normal;
+    }
+	
+@font-face
+{
+    font-family: FreeSerif;
+    src: url('https://cdn.jsdmirror.com/gh/No5972/Live2D@22/FreeSerif.otf');
+    font-style: normal;
+    font-weight: normal;
+}
+    
+@font-face
+{
+    font-family: FreeSerif;
+    src: url('https://cdn.jsdmirror.com/gh/No5972/Live2D@22/FreeSerifBold.otf');
+    font-style: normal;
+    font-weight: bold;
+}
+    
+@font-face
+{
+    font-family: FreeSerif;
+    src: url('https://cdn.jsdmirror.com/gh/No5972/Live2D@22/FreeSerifItalic.otf');
+    font-style: italic;
+    font-weight: normal;
+}
+    
+@font-face
+{
+    font-family: FreeSerif;
+    src: url('https://cdn.jsdmirror.com/gh/No5972/Live2D@22/FreeSerifBoldItalic.otf');
+    font-style: italic;
+    font-weight: bold;
+}
+
+*/
+
+    .message {
+      font-family: 'ZCOOL KuaiLe';
+    }
+  </style> 
+  <style>
+    .pace .pace-progress {
+      background: #fff !important;
+    }
+  </style>
+<!-- MODIFIED BY 5972 -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/cms/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/cms/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/cms/images/favicon.ico">
+  <link rel="mask-icon" href="/cms/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/cms/css/main.css">
+
+
+<link rel="stylesheet" href="//unpkg.com/@fortawesome/fontawesome-free@5.13.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="/cms/lib/animate-css/animate.min.css">
+  <link rel="stylesheet" href="//unpkg.com/pace-js@1.2.4/themes/blue/pace-theme-minimal.css">
+  <script data-pace-options='{ "ajax": false }' src="//unpkg.com/pace-js@1.2.4/pace.min.js"></script>
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"no5972.moe","root":"/cms/","scheme":"Pisces","version":"8.0.0-rc.4","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="最初做这个游戏是因为想起来 秦时明月 中的 墨攻棋阵 ，也就是黑白棋，努力还原动漫中的场景，周末的时候终于完成了。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="黑白棋中的AI">
+<meta property="og:url" content="https://no5972.moe/cms/archivers/88.html">
+<meta property="og:site_name" content="No.5972 Publishment Website">
+<meta property="og:description" content="最初做这个游戏是因为想起来 秦时明月 中的 墨攻棋阵 ，也就是黑白棋，努力还原动漫中的场景，周末的时候终于完成了。">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://img.shields.io/badge/%E5%8D%83%E5%8D%83-%E9%BB%91%E7%99%BD%E6%A3%8B%E4%B8%AD%E7%9A%84AI-brightgreen">
+<meta property="og:image" content="https://images.weserv.nl/?url=https://img-blog.csdnimg.cn/img_convert/e68ddd6129e8cf8925f3cc4f6c0203ba.png">
+<meta property="og:image" content="https://images.weserv.nl/?url=https://img-blog.csdnimg.cn/img_convert/a449b3c02b8c8373811cd85312aa289e.png">
+<meta property="og:image" content="https://images.weserv.nl/?url=https://img-blog.csdnimg.cn/img_convert/8ced59a2995f4d4edc191720a05b2bb3.png">
+<meta property="og:image" content="https://images.weserv.nl/?url=https://img-blog.csdnimg.cn/img_convert/dccebe68103a2c973ac8e7c92407b8dc.png">
+<meta property="og:image" content="https://images.weserv.nl/?url=https://img-blog.csdnimg.cn/img_convert/8d59fd3fff3c11be84c2087c5efcf2c6.png">
+<meta property="og:image" content="https://images.weserv.nl/?url=https://img-blog.csdnimg.cn/img_convert/36fbdcd9379659b8fdd9a4801028b3af.png">
+<meta property="og:image" content="https://images.weserv.nl/?url=https://img-blog.csdnimg.cn/img_convert/e79d22dbd0503187e045c0a0b9f72897.png">
+<meta property="og:image" content="https://images.weserv.nl/?url=https://img-blog.csdnimg.cn/img_convert/4f9eaa4ae65c0613bd01228885c2862f.png">
+<meta property="article:published_time" content="2021-05-11T03:00:00.000Z">
+<meta property="article:modified_time" content="2023-03-15T10:29:24.515Z">
+<meta property="article:author" content="No.5972">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img.shields.io/badge/%E5%8D%83%E5%8D%83-%E9%BB%91%E7%99%BD%E6%A3%8B%E4%B8%AD%E7%9A%84AI-brightgreen">
+
+<link rel="canonical" href="https://no5972.moe/cms/archivers/88.html">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>黑白棋中的AI | No.5972 Publishment Website</title>
+  <script>
+      if (!!window.ActiveXObject || "ActiveXObject" in window) {
+        document.write('Please note that this site no longer supports Internet Explorer. Please use <a href=\"https://www.microsoft.com/edge\">Microsoft Edge</a> or other browsers to browse this site.');
+        window.onload = function () {
+          $("style,link").remove();
+        }
+        console.log("IE Found!");
+        
+      }
+
+  </script>
+  <script>
+function loadJS( url, callback ){
+    var script = document.createElement('script'),fn = callback || function(){};
+    script.type = 'text/javascript';
+    //IE
+    if(script.readyState){
+        script.onreadystatechange = function(){
+            if( script.readyState == 'loaded' || script.readyState == 'complete' ){
+                script.onreadystatechange = null;
+                fn();
+            }
+        };
+    }else{
+        //其他浏览器
+        script.onload = function(){
+            fn();
+        };
+    }
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+}
+
+
+
+
+  </script>
+  <style>
+#switchBackgroundBtn {
+ right: 30px;
+ opacity: 0 !important;
+ transition: opacity 0.5s;
+}
+
+#switchBackgroundBtn {
+
+} 
+
+#switchBackgroundBtn:hover {
+ opacity: 1 !important;
+} 
+
+@media (max-width: 991px) {
+ #switchBackgroundBtn {
+  right: 20px;
+ } 
+}
+  </style>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/cms/feed.xml" title="No.5972 Publishment Website" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+    <!-- <div style="position:fixed;width: 100%;height: 100%;background: url(https://cdndata.fairyabc.com/attachment/album/201809/06/161517g07y9z06yfunuuub.jpg);opacity: 0.25; background-size:cover ; background-attachment:fixed; pointer-events: none;" id="customBackground"></div> -->
+    <div style="position:fixed;width: 100%;height: 100%;background: url(https://img.xjh.me/random_img.php?type=bg&ctype=acg&return=302);opacity: 0.25; background-size:cover ; background-attachment:fixed; pointer-events: none; display: none;" id="randomBackground"></div>
+    <!-- <div style="position:fixed;width: 100%;height: 100%;background: url(https://cdn.jsdelivr.net/gh/No5972/Live2D@13/161517g07y9z06yfunuuub.jpg);opacity: 0.25; background-size:cover ; background-attachment:fixed; pointer-events: none; display: block;" id="customBackground"></div> -->
+    <div style="position:fixed;width: 100%;height: 100%;background: url(/cms/static/bg250217-2.jpg);opacity: 0.25; background-size:cover ; background-attachment:fixed; pointer-events: none; display: block;" id="customBackground"></div>
+    <div class="back-to-top1" id="switchBackgroundBtn" onclick="toggleRandomBackground()" style="bottom: 60px; box-sizing: border-box; color: #fff; padding: 0 6px; transition: bottom 0.2s ease-in-out; background: #007ff3; cursor: pointer; opacity: 0.6; position: fixed; z-index: 1300; width: 24px; font-size: 12px;"><i class="fa fa-paint-brush"></i></div>
+    <div id="cookie-alert" class="cookie-alert" style="position: absolute; width: 100%; height: fit-content; background: white; left: 0; top: 0; display: none; z-index: 1000;">We use cookies to improve your experience on our website. By browsing this website, you agree to our use of cookies. <a href="#" onclick="agreeCookies()">OK</a>&nbsp;|&nbsp;<a href="/cms/cookie-notice">Learn More &gt;</a></div>
+    <script>
+      
+
+      if(!localStorage.getItem('mask')){
+       document.getElementById("cookie-alert").style.display = "block";
+      }
+
+      function refreshRandomBackgroundStatus() {
+       document.getElementById('randomBackground').style.display = "block";
+       if (localStorage.getItem('randomBackground') == 'true') {
+        document.getElementById('randomBackground').style.display = "block";
+        document.getElementById('customBackground').style.display = "none";
+       } else {
+        document.getElementById('randomBackground').style.display = "none";
+        document.getElementById('customBackground').style.display = "block";
+       }
+      }
+
+      function toggleRandomBackground() {
+       if (localStorage.getItem('randomBackground') == null || localStorage.getItem('randomBackground') == 'false') {
+        localStorage.setItem('randomBackground', 'true');
+       } else {
+        localStorage.setItem('randomBackground', 'false');
+       }
+       refreshRandomBackgroundStatus();
+      }
+
+      refreshRandomBackgroundStatus();
+      
+      function agreeCookies() {
+        document.getElementById("cookie-alert").style.display = "none";
+        localStorage.setItem('mask','true');
+      }
+
+      window.onload = function () {
+        // IE Alert
+        if (!!window.ActiveXObject || "ActiveXObject" in window) {
+         var p = document.createElement("div");
+         p.style.color="#000";
+         p.style.position="absolute";
+         p.style.width="100%";
+         p.style.height="fit-content";
+         p.style.background="white";
+         p.style.left=0;
+         if(!localStorage.getItem('mask')){
+           p.style.top="32px";
+         } else {
+           p.style.top=0;
+         }
+         p.style.zIndex=1000;
+         p.innerHTML = 'Please note that this site no longer supports Internet Explorer. Please use <a href="https://www.microsoft.com/edge" target="_blank" rel="noopener">Microsoft Edge</a> or other browsers to browse this site.'
+         document.body.insertBefore(p, document.getElementsByClassName("cookie-alert")[0]);
+        }
+
+        const selects = document.querySelectorAll('.lang-select');
+        selects.forEach(sel => {
+          sel.addEventListener('change', () => {
+            const target = sel.options[sel.selectedIndex];
+            sessionStorage.setItem("lang", target.label);
+          });
+        });
+        
+        $("a[target=_blank]").each (function () { $(this).attr("onclick", "window.open('/cms/confirm.html?' + encodeURI($(this).attr(\"href\"))) ; return false;");} )
+
+        var pageLoadTime = new Date().getTime()  - window.performance.timing.navigationStart;
+        if (pageLoadTime > 10000 && location.pathname == "/cms/") {
+         loadJS("https://cdn.bootcdn.net/ajax/libs/layer/3.1.1/layer.min.js?v=" + new Date().getTime(), function () {
+          layer.msg('本次访问网站消耗了 ' + pageLoadTime + ' 毫秒，访问较慢，推荐访问国内镜像站 https://no5972.gitee.io ，访问更快。', {
+            time: 10000, //20s后自动关闭
+            btn: ['确认', '取消'],
+            yes: function () {
+              location.href="https://no5972.gitee.io/cms";
+            }
+          })
+         })
+        }
+      }
+
+      if (sessionStorage.getItem("lang") == "简体中文" && location.href.lastIndexOf("zh-CN") == -1) { 
+        location.href = location.href.replace("/cms/", "/cms/zh-CN/");
+      }
+
+/*
+window.onload = function () {
+	if (navigator.userAgent.lastIndexOf("Macintosh") != -1 || navigator.userAgent.lastIndexOf("Windows NT") != -1) {
+	if (navigator.platform.lastIndexOf("Linux arm") == -1) { // 手机浏览器不支持视频透明
+		var v = document.createElement("video");
+		v.src = "https://cdn.jsdelivr.net/gh/No5972/Live2D@master-1/2ce423abb276a932119.mp4";	
+		v.loop = true;
+		v.autoplay = true;
+		v.currentTime = 40;
+		$(v).css("height" ,"100%");
+		$(v).css("width" ,"100%");
+		$(v).css("object-fit" ,"fill");
+
+
+		$("#customBackground").html("");
+		$("#customBackground").append(v);
+		$("#customBackground").find("video")[0].play();
+	}
+	}
+}
+*/
+
+    </script>
+    <!-- <script>
+      (function(d) {
+        var config = {
+          kitId: 'cwe3tnz',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script> -->
+
+    <main class="main">
+
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+        <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+        <span class="toggle-line toggle-line-first"></span>
+        <span class="toggle-line toggle-line-middle"></span>
+        <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/cms/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">No.5972 Publishment Website</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Easier than easy.</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-return">
+
+    <a href="https://no5972.github.io/" rel="noopener" target="_blank"><i class="fa fa-reply fa-fw"></i>Return</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/cms/about.html" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/cms/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/cms/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+        <li class="menu-item menu-item-toolkit">
+
+    <a href="/cms/archivers/4.html" rel="section"><i class="fa fa-wrench fa-fw"></i>Toolkit</a>
+
+  </li>
+        <li class="menu-item menu-item-donate">
+
+    <a href="https://afdian.com/@wujiuqier" rel="noopener" target="_blank"><i class="fa fa-heart fa-fw"></i>Donate</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar" style="background: #fff2; padding: 20px 0;">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active" style="display: contents;">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <section class="post-toc-wrap sidebar-panel">
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#首先来看看简单ai"><span class="nav-text"> 首先来看看简单AI</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#其他难度-ai"><span class="nav-text"> 其他难度 AI</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#然后得分的计算"><span class="nav-text"> 然后得分的计算</span></a></li></ol></div>
+      </section>
+      <!--/noindex-->
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="No.5972"
+      src="https://no5972.moe/cms/static/32865305.jpg">
+  <p class="site-author-name" itemprop="name">No.5972</p>
+  <div class="site-description" itemprop="description">No.5972 is silly B</div>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/No5972" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;No5972" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://stackoverflow.com/users/14547429/no-5972" title="StackOverflow → https:&#x2F;&#x2F;stackoverflow.com&#x2F;users&#x2F;14547429&#x2F;no-5972" rel="noopener" target="_blank"><i class="fab fa-stack-overflow fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:wujiuqier#foxmail.com" title="E-Mail → mailto:wujiuqier#foxmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/cms/feed.xml" title="RSS → &#x2F;feed.xml"><i class="fa fa-rss fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.cnblogs.com/wujiuqier" title="CNBlogs → https:&#x2F;&#x2F;www.cnblogs.com&#x2F;wujiuqier" rel="noopener" target="_blank"><i class="iconfont icon-CN_cnblogs fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/12551304" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;12551304" rel="noopener" target="_blank"><i class="iconfont icon-bilibili-fill fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/wujiuqier" title="Zhihu → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;wujiuqier" rel="noopener" target="_blank"><i class="iconfont icon-zhihu fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://tieba.baidu.com/home/main?un=wujiuqier" title="Tieba → https:&#x2F;&#x2F;tieba.baidu.com&#x2F;home&#x2F;main?un&#x3D;wujiuqier" rel="noopener" target="_blank"><i class="iconfont icon-tieba fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.pixiv.net/en/users/17358156/" title="Pixiv → https:&#x2F;&#x2F;www.pixiv.net&#x2F;en&#x2F;users&#x2F;17358156&#x2F;" rel="noopener" target="_blank"><i class="iconfont icon-pixiv fa-fw"></i></a>
+      </span>
+  </div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/cms/archives/">
+        
+          <span class="site-state-item-count">175</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+
+    
+                <nav class="site-nav">
+                  <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/cms/categories/Animation/">Animation</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/AtoW/">AtoW</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/Automation/">Automation</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/C/">C#</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/C-C/">C/C++</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/Github/">Github</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/Hardware/">Hardware</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/Java/">Java</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/JavaScript/">JavaScript</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/Mathematics/">Mathematics</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/Moving-Away-from-Flash/">Moving Away from Flash</a><span class="category-list-count">21</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/Other/">Other</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/PowerShell/">PowerShell</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/Python/">Python</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/Web-Building/">Web Building</a><span class="category-list-count">24</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/Webapp/">Webapp</a><span class="category-list-count">45</span></li><li class="category-list-item"><a class="category-list-link" href="/cms/categories/jekyll-update/">jekyll update</a><span class="category-list-count">4</span></li></ul>
+                </nav>
+                <nav class="site-nav" style="width: 80%; overflow-x: hidden;">
+                  <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/cms/archivers/171.html">仅作笔记用：其他盘的页面文件突然不见了怎么办</a></li><li class="post-list-item"><a class="post-list-link" href="/cms/archivers/170.html">实用为先! 图说Photoshop 6.0轻松入门四步走</a></li><li class="post-list-item"><a class="post-list-link" href="/cms/archivers/169.html">关于 Win7 运行豆包桌面版提示无法定位程序输入点，无法运行的问题</a></li><li class="post-list-item"><a class="post-list-link" href="/cms/archivers/168.html">C 语言 手动给 Win9x/ME 蓝屏</a></li><li class="post-list-item"><a class="post-list-link" href="/cms/archivers/167.html">仅作笔记用：GPT4All 本地部署 DeepSeek R1 模型，简明说明（手动下载模型）</a></li><li class="post-list-item"><a class="post-list-link" href="/cms/archivers/166.html">大学 C 语言在线 PTA 平台编译提示警告未使用 scanf 返回值的问题</a></li></ul>
+                </nav>
+              
+  </nav>
+</div>
+
+
+
+      </section>
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </header>
+
+      
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/No5972" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div id="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+      <div class="main-inner">
+        
+
+        <div class="content post posts-expand">
+          
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://no5972.moe/cms/archivers/88.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://no5972.moe/cms/static/32865305.jpg">
+      <meta itemprop="name" content="No.5972">
+      <meta itemprop="description" content="No.5972 is silly B">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="No.5972 Publishment Website">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+          黑白棋中的AI
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2021-05-11 11:00:00 | Modified: 2023-03-15 18:29:24" itemprop="dateCreated datePublished" datetime="2021-05-11T11:00:00+08:00">2021-05-11 11:00:00</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/cms/categories/C-C/" itemprop="url" rel="index"><span itemprop="name">C/C++</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>来源：<a href="https://www.dreamwings.cn/reversi/3013.html" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/%E5%8D%83%E5%8D%83-%E9%BB%91%E7%99%BD%E6%A3%8B%E4%B8%AD%E7%9A%84AI-brightgreen" alt="千千-黑白棋中的AI" /></a></p>
+<p>到了考试周了佯，可是偏偏这个时候迎来了很多很多的课程设计，幸好教授把C语言的课程设计提前发出了，不然都在最后几周，加上数据结构的课程设计就没有时间做这个啦~</p>
+<p>刚开始打算做成UWP应用的，可是网上的教程都是C#，并且用C++做的话某些功能和C#不一样，所以就这样拖了好多周，省赛前一点儿也没有开始做，等到省赛结束之后，别人都差不多完成啦！而我才开始准备查找资料……</p>
+<p>然而一周过去了，进度还是<strong>0%</strong>。噫，<strong>1%</strong> 吧！</p>
+<p>眼看就要开始验收了，算了，还是用最简单的 <strong>EasyX</strong> 做吧！以后的 C# 课程设计再考虑 UWP。</p>
+<p>周一开始敲代码，整整一周的课余时间，都在努力做这个，现在想起来，那个时候真的好累唉，居然没有感觉到~😔</p>
+<p>最初做这个游戏是因为想起来 <strong>秦时明月</strong> 中的 <strong>墨攻棋阵</strong> ，也就是黑白棋，努力还原动漫中的场景，周末的时候终于完成了。</p>
+<p>先附图：</p>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img src="https://images.weserv.nl/?url=https://img-blog.csdnimg.cn/img_convert/e68ddd6129e8cf8925f3cc4f6c0203ba.png" alt="" /></div><div class="group-picture-column" style="width: 50%;"><img src="https://images.weserv.nl/?url=https://img-blog.csdnimg.cn/img_convert/a449b3c02b8c8373811cd85312aa289e.png" alt="" /></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img src="https://images.weserv.nl/?url=https://img-blog.csdnimg.cn/img_convert/8ced59a2995f4d4edc191720a05b2bb3.png" alt="" /></div><div class="group-picture-column" style="width: 50%;"><img src="https://images.weserv.nl/?url=https://img-blog.csdnimg.cn/img_convert/dccebe68103a2c973ac8e7c92407b8dc.png" alt="" /></div></div></div>
+<p>怎么说千千也都是新手呢！感觉做的还算满意吧！</p>
+<p>人机对战中有三种模式哦！</p>
+<p><strong>简单、中等、困难</strong></p>
+<p>那么，接下来，我们一起来看看黑白棋中的AI是如何实现的。</p>
+<p>对于我们来说，下棋的时候总是想着如何才能对自己最有利，当前最优？还是全局最优？</p>
+<p>如果我们往后几步考虑的话，那便是全局最优啦！那当我们只看眼下哪一个位置的落子对自己最有利，这样便是当前最优，也是局部最优。</p>
+<p>在黑白棋中，我们同样可以采用这样的思想。</p>
+<h1 id="首先来看看简单ai"><a class="markdownIt-Anchor" href="#首先来看看简单ai"></a> 首先来看看简单AI</h1>
+<p><strong>因为简单呗，所以它返回的仅仅只是当前的最优解，再怎么说也不能让它随机返回坐标对吧！</strong></p>
+<p>那局部最优解又是以什么为评测标准的呢？</p>
+<p>嗯，我们采用的是<strong>能够转换对方棋子最多</strong>的位置，这个可不是行动力哦！</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">POINT2 <span class="title">Easy</span><span class="params">()</span>						<span class="comment">//人机对战简单AI</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    POINT2 MAX;					<span class="comment">//定义以及初始化最优解</span></span><br><span class="line">    MAX.INIT(<span class="number">0</span>, <span class="number">0</span>);</span><br><span class="line">    <span class="keyword">int</span> maxx = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; SIZE; ++i)</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; SIZE; ++j)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (expect[i][j] &gt;= maxx)	<span class="comment">//寻找可以转化棋子最多的点作为最优解</span></span><br><span class="line">            &#123;</span><br><span class="line">                maxx = expect[i][j];</span><br><span class="line">                MAX.INIT(i, j);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="keyword">if</span> (ESCEXIT)gameStart();</span><br><span class="line">    Sleep(<span class="number">800</span>);					<span class="comment">//间歇</span></span><br><span class="line">    <span class="keyword">return</span> MAX;					<span class="comment">//返回最优解</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>呐，<code>expect</code>中便是每个点可以转换对方棋子的个数，这个 AI 简单吧！😄</p>
+<h1 id="其他难度-ai"><a class="markdownIt-Anchor" href="#其他难度-ai"></a> 其他难度 AI</h1>
+<p>既然是简单以上的难度，就不能再像那样简单啦！不然一个中等AI被简单AI击败多没意思，O(∩_∩)O哈哈~</p>
+<p>首先，我们应该知道一个估值表的问题，在黑白棋中，不同位置都有不同位置的估值，虽然这样的估值表的用处并不是很大，但却在某些细节中表现出至关重要的作用。</p>
+<p>黑白棋的棋盘默认是8*8的，总共64格。</p>
+<p>从游戏规则我们可以看出来，角上的子很重要，因为这里不会被对方转换，角边上的点很危险，它给了对方直接进角的机会。</p>
+<p>边上中间的四个点比较重要，只能从一个方向被翻转……等等。</p>
+<p>根据这样的经验，我们大致可以得到以下的<strong>估值表</strong>：</p>
+<table style="height: 519px;" border="0" width="584" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US"> <wbr></span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" style="color: #3366ff;" xml:lang="EN-US">A</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" style="color: #3366ff;" xml:lang="EN-US">B</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" style="color: #3366ff;" xml:lang="EN-US">C</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" style="color: #3366ff;" xml:lang="EN-US">D</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" style="color: #3366ff;" xml:lang="EN-US">E</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" style="color: #3366ff;" xml:lang="EN-US">F</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" style="color: #3366ff;" xml:lang="EN-US">G</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" style="color: #3366ff;" xml:lang="EN-US">H</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="center"><span lang="EN-US" style="color: #3366ff;" xml:lang="EN-US">1</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">90</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">-60</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">10</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">10</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">10</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">10</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">-60</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">90</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="center"><span lang="EN-US" style="color: #3366ff;" xml:lang="EN-US">2</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">-60</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">-80</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">5</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">5</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">5</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">5</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">-80</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">-60</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="center"><span lang="EN-US" style="color: #3366ff;" xml:lang="EN-US">3</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">10</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">5</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">1</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">1</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">1</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">1</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">5</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">10</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="center"><span lang="EN-US" style="color: #3366ff;" xml:lang="EN-US">4</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">10</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">5</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">1</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">1</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">1</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">1</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">5</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">10</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="center"><span lang="EN-US" style="color: #3366ff;" xml:lang="EN-US">5</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">10</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">5</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">1</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">1</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">1</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">1</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">5</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">10</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="center"><span lang="EN-US" style="color: #3366ff;" xml:lang="EN-US">6</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">10</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">5</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">1</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">1</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">1</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">1</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">5</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">10</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="center"><span lang="EN-US" style="color: #3366ff;" xml:lang="EN-US">7</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">-60</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">-80</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">5</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">5</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">5</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">5</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">-80</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">-60</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="center"><span lang="EN-US" style="color: #3366ff;" xml:lang="EN-US">8</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">90</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">-60</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">10</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">10</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">10</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">10</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">-60</span></p>
+</td>
+<td>
+<p align="center"><span lang="EN-US" xml:lang="EN-US">90</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>有了这张表，AI 进行估值的时候就很简单了，不过<strong>仅凭这一点可不行哦</strong>！</p>
+<p>黑白棋的AI中，我们要考虑的除了估值表，还有稳定子。</p>
+<p><strong>稳定子</strong>，即不能被转换的棋子，稳定子的数量在游戏中是变化的，比如，一方占据整整一条边，那么这一条边上的所有棋子都是稳定子。</p>
+<p><strong>行动力</strong>，某方当前可走位置的个数，因为在黑白棋的游戏规则中，每一步的走棋都要形成转换，否则不能走棋，既然这样的话，我们在AI中便要尽可能让自己的行动力最大，而对方行动力最小，也就是尽可能让双方行动力差最大，这样的话，很容易AI便可以把玩家逼上绝路，玩笑而已……</p>
+<p>除了这两个还有<strong>余裕手</strong>和<strong>潜在行动力</strong>，虽然并不懂~</p>
+<p>对电脑AI设定中，我们的原则是能走角就走角，不到万不得已的情况下不要走邻角点。</p>
+<p>对其他情况下采用<strong>极大极小博弈树搜索</strong>：</p>
+<p>这里假设AI的对手都是最聪明的，会选择最优解，即会选择对AI最不利的选择。</p>
+<p>搜出来的结果集是AI方的结果，那么要选择<strong>最终得分最高的那个位置</strong></p>
+<p>搜出来的结果集是玩家方的结果，那么要选择<strong>最终得分最低的那个位置</strong>。</p>
+<p>如下图</p>
+<p><img src="https://images.weserv.nl/?url=https://img-blog.csdnimg.cn/img_convert/8d59fd3fff3c11be84c2087c5efcf2c6.png" alt="" /></p>
+<p>假设圆形代表的是AI节点，方形代表玩家节点。</p>
+<p>对于A2和A3这两种选择，AI显然是选择A2得10分。对于A4和A4这两种选择，AI显然是选择A4得20分。</p>
+<p>但是对于B1，B2来说，玩家如果下B2，使得AI可以得20分，下B1，使得AI只能得10分，那么玩家显然是下B1。</p>
+<p>所以最终A1这一步，AI只能得10分。这就是极大极小算法。</p>
+<p>然后就是α-β剪枝：</p>
+<p><img src="https://images.weserv.nl/?url=https://img-blog.csdnimg.cn/img_convert/36fbdcd9379659b8fdd9a4801028b3af.png" alt="" /></p>
+<p>现在A2，A3已经选出最大值10，B1的得分是10分。</p>
+<p>而对于B1，B2来说是要选最小值，既然B1的得分是10分，则B1，B2之间的最终结果是&lt;=10的。</p>
+<p>而A4的得分是20分，对于A4，A5来说是选择最大值得，即A4，A5之间的最终结果是&gt;=20的，说明B2的最终结果是&gt;=20的。</p>
+<p>那么这种情况下肯定是选B1了，对于还没有搜索的A5节点来说，已经影响不到最终的选择结果了，所以就可以不用考虑了。</p>
+<h1 id="然后得分的计算"><a class="markdownIt-Anchor" href="#然后得分的计算"></a> 然后得分的计算</h1>
+<p>这里每一步的得分，都是相对于AI来说的得分。</p>
+<p>AI自己落子某一个位置，得一个正分，之后对手落子某一个位置，所得的分数对于AI来说就是一个负分（即玩家取得的优势，对于AI来说就是劣势）。</p>
+<p>对于已经搜到最大深度的节点来说，它的得分就是这个位置的本身得分（因为后面已经不搜了）。</p>
+<p>而对于中途节点来说，它的得分应该是这个位置的本身得分，加上下一步对方的选择结果的得分。这里不能只以最后一步的结果逆推的。</p>
+<p>举个例子：</p>
+<p><img src="https://images.weserv.nl/?url=https://img-blog.csdnimg.cn/img_convert/e79d22dbd0503187e045c0a0b9f72897.png" alt="" /></p>
+<p>如上图的左右两种情况。</p>
+<p>假设圆形代表的是<em>AI</em>节点，方形代表<em>玩家</em>节点。</p>
+<p>其中分值表示的是节点自身落子该位置所获得的在估值表中的得分，玩家节点取负分。</p>
+<p>如果只是用最深层的节点的得分，来计算最上层的节点的得分，那么按照上面极大极小算法，<strong>AI最后的得分：左边是10分，右边是5分。</strong> 那么AI选择左边的10分这种情况。</p>
+<p>但是却造成了中间过程中，玩家可以得到50分的这样一个相对来说是比较好的分值。</p>
+<p>而AI应该不让玩家取得这样一个比较好的优势。</p>
+<p>所以要综合前后对方的落子位置以及得分来考虑最终得分：</p>
+<p><img src="https://images.weserv.nl/?url=https://img-blog.csdnimg.cn/img_convert/4f9eaa4ae65c0613bd01228885c2862f.png" alt="" /></p>
+<p><strong>AI最后的得分：左边是-30分，右边是-15分。</strong> 最终选择为右边，而不是左边。</p>
+<p>极大极小搜索就是这样了，难度的抉择取决于搜索的深度，不过要保证的是不要超时哦！</p>
+<p>接下来附上我的 墨攻棋阵 中的AI算法，估计只有一点点的沾边吧！</p>
+<p>还有很多需要优化的地方惹😭</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">difai</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y,<span class="keyword">int</span> mapnow[SIZE][SIZE],<span class="keyword">int</span> expectnow[SIZE][SIZE],<span class="keyword">int</span> depin,<span class="keyword">int</span> depinmax)</span>	<span class="comment">//极大极小搜索</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (depin &gt;= depinmax)<span class="keyword">return</span> <span class="number">0</span>;			<span class="comment">//递归出口</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> maxx = <span class="number">-10005</span>;				<span class="comment">//最大权值</span></span><br><span class="line">    POINT2 NOW;</span><br><span class="line">    <span class="keyword">int</span> expectnow2[SIZE][SIZE] , mapnow2[SIZE][SIZE],mapnext[SIZE][SIZE],expectlast[SIZE][SIZE];	<span class="comment">//定义临时数组</span></span><br><span class="line"></span><br><span class="line">    copymap(mapnow2, mapnow);			<span class="comment">//复制当前棋盘</span></span><br><span class="line"></span><br><span class="line">    mapnow2[x][y] = NOWCOLOR ? <span class="number">1</span> : <span class="number">-1</span>;		<span class="comment">//模拟在当前棋盘上下棋</span></span><br><span class="line">    <span class="keyword">int</span> ME = MAPPOINTCOUNT[x][y] + expectnow[x][y];	<span class="comment">//当前棋子权</span></span><br><span class="line">    NOW.INIT(x,y);</span><br><span class="line"></span><br><span class="line">    Change(NOW, mapnow2, <span class="literal">false</span>);			<span class="comment">//改变棋盘AI结束</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> MAXEXPECT = <span class="number">0</span>, LINEEXPECT = <span class="number">0</span>, COUNT = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; SIZE; ++i)</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; SIZE; ++j)</span><br><span class="line">        &#123;</span><br><span class="line">            expectnow2[i][j] = Judge(i, j, !NOWCOLOR, mapnow2);<span class="comment">//预判对方是否可以走棋</span></span><br><span class="line">            <span class="keyword">if</span> (expectnow2[i][j])</span><br><span class="line">            &#123;</span><br><span class="line">                ++MAXEXPECT;</span><br><span class="line">                <span class="keyword">if</span> ((i == <span class="number">0</span> &amp;&amp; j == <span class="number">0</span>) || (i == <span class="number">0</span> &amp;&amp; j == SIZE - <span class="number">1</span>) || (i == SIZE - <span class="number">1</span> &amp;&amp; j == SIZE - <span class="number">1</span>) || (i == SIZE - <span class="number">1</span> &amp;&amp; j == <span class="number">0</span>))<span class="keyword">return</span> <span class="number">-1800</span>;	<span class="comment">//如果对方有占角的可能</span></span><br><span class="line">                <span class="keyword">if</span> ((i &lt; <span class="number">2</span> &amp;&amp; j &lt; <span class="number">2</span>) || (i &lt; <span class="number">2</span> &amp;&amp; SIZE - j - <span class="number">1</span> &lt; <span class="number">2</span>) || (SIZE - <span class="number">1</span> - i &lt; <span class="number">2</span> &amp;&amp; j &lt; <span class="number">2</span>) || (SIZE - <span class="number">1</span> - i &lt; <span class="number">2</span> &amp;&amp; SIZE - <span class="number">1</span> - j &lt; <span class="number">2</span>))++LINEEXPECT;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="keyword">if</span> (LINEEXPECT * <span class="number">10</span> &gt; MAXEXPECT * <span class="number">7</span>)<span class="keyword">return</span> <span class="number">1400</span>;<span class="comment">//如果对方走到坏点状态较多 剪枝</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; SIZE; i++)</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; SIZE; j++)</span><br><span class="line">            <span class="keyword">if</span> (expectnow2[i][j])		<span class="comment">//如果对方可以走棋</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">int</span> YOU = MAPPOINTCOUNT[i][j] + expectnow2[i][j];<span class="comment">//当前权值</span></span><br><span class="line">                copymap(mapnext, mapnow2);	<span class="comment">//拷贝地图</span></span><br><span class="line">                mapnext[i][j] = (!NOWCOLOR) ? <span class="number">1</span> : <span class="number">-1</span>;		<span class="comment">//模拟对方走棋</span></span><br><span class="line">                NOW.INIT(i, j);</span><br><span class="line">                Change(NOW, mapnext, <span class="literal">false</span>);			<span class="comment">//改变棋盘</span></span><br><span class="line"></span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">0</span>; k &lt; SIZE; k++)</span><br><span class="line">                    <span class="keyword">for</span> (<span class="keyword">int</span> l = <span class="number">0</span>; l &lt; SIZE; l++)</span><br><span class="line">                        expectlast[k][l] = Judge(k, l, NOWCOLOR, mapnext);	<span class="comment">//寻找AI可行点</span></span><br><span class="line"></span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">0</span>; k &lt; SIZE; k++)</span><br><span class="line">                    <span class="keyword">for</span> (<span class="keyword">int</span> l = <span class="number">0</span>; l &lt; SIZE;l++)</span><br><span class="line">                        <span class="keyword">if</span> (expectlast[k][l])</span><br><span class="line">                        &#123;</span><br><span class="line">                            <span class="keyword">int</span> nowm = ME - YOU + difai(k, l, mapnext, expectlast, depin + <span class="number">1</span>, depinmax);</span><br><span class="line">                            maxx = maxx &lt; nowm ? nowm : maxx;</span><br><span class="line">                        &#125;</span><br><span class="line">            &#125;</span><br><span class="line">    <span class="keyword">return</span> maxx;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>有关黑白棋AI极大极小搜索的算法也就这些了，希望本文能对你有一点帮助。</p>
+<p>另外，墨攻棋阵的项目源码在我的 <a href="https://github.com/im0qianqian/" target="_blank" rel="noopener">GitHub</a> 里面，欢迎大家 Fork ，发现 Bug 后不要忘记给我留言哦！😝</p>
+<p><strong>墨攻棋阵源码：<a href="https://github.com/im0qianqian/Reversi" target="_blank" rel="noopener">https://github.com/im0qianqian/Reversi</a></strong></p>
+<link rel="stylesheet" href="/cms/css/spoiler.css" type="text/css"><script src="/cms/js/spoiler.js" type="text/javascript" async></script>
+    </div>
+
+    
+    
+    
+         <div style="color: #888a; font-family: DIN-Bold; background: #eee5; padding: 10px; margin-bottom: 10px;">Publishing this article is for the purpose of conveying more information, and does not mean agreeing with its views or confirming its description, nor does it mean that we are responsible for its authenticity. Should you have any questions or doubts about the content of the post, please don't hesitate to contact us. We will respond to you and deal with it as quickly as possible.</div>
+
+      <footer class="post-footer">
+
+        
+  <!-- <div class="addthis_inline_share_toolbox">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=SHUTDOWN" async="async"></script>
+  </div> -->
+  <div class="social-share" data-sites="weibo,wechat,qq,qzone,facebook,twitter,linkedin" data-title='仅作笔记用：其他盘的页面文件突然不见了怎么办' data-description='DNF 玩家如果电脑只有 16GB 内存的话，通常需要手动设置页面文件，才能保证游戏稳定运行。而 C 盘的页面文件一般不会掉，但是有时候会出现其他盘的页面文件莫名其妙消失的情况，而此时去高级系统设置查看，发现页面文件却还是之前设置好的。两个地方显示的情况是不一样的。这种情况可以手动重新创建一个页面文件，看看能不能恢复。' style="text-align: center; margin: 1rem 0;"></div>
+  <div class="ad" style="text-align: center;">
+    <a href="https://curl.qcloud.com/JuZ5tVw9" target="_blank"><img src="/cms/static/ad.jpg"></img></a>
+  </div>
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/cms/archivers/87.html" rel="prev" title="将Hexo环境迁移到Repl">
+      <i class="fa fa-chevron-left"></i> 将Hexo环境迁移到Repl
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/cms/archivers/89.html" rel="next" title="将Hexo博客直接部署到Vercel，不经过Github">
+      将Hexo博客直接部署到Vercel，不经过Github <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+        </div>
+        
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2011 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="author" itemprop="copyrightHolder">No.5972</span>
+</div>
+
+<div class="copyright" style="
+    vertical-align: middle;
+">
+<a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/" style="
+    padding-right: 10px;
+    border: none;
+"><img alt="Creative Commons License" style="border-width:0;margin: unset;/* max-width: unset; */display: inline;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAABGdBTUEAANbY1E9YMgAAAJZQTFRF////7u7u3d3dys7KzMzMyMzIxsrGxcbFur+6u7u7s7iyq7GqqqqqmZmZlJmTj5CPiIiIh4eHhoaGgICAfYJ9d3d3cnZxZ2tnZmZmW15bVVVVS0xLREREQ0NDQkJCQUJBOz07OTs5MzMzMTMxLjAuJygnJCUjIiIiISEhICAgGRkZERERDxAPDg4ODQ4NDQ0NDQ0MAAAADbeuvgAAANNJREFUeNqtk2kTgiAQhl/KzlWzgw6j+7Ayq/3/f64hTPNLNskOMMwuPLzsAtiygWHVNJC0TThIXSrxierXv/UZoJ8E2SHqQNQeVgSuT7lqh2dEjXk14C2AE7ESiiMHakdU773igF5keu5AKXDEHUQhpIyF50LeiNotEzct4+XO78AxO0JXJdzqO8uEqNvMBKUaYcbXDD8qVNNYSA/yXlRYEISfFNI9gBvzVCje1rDYF3L4sf+d03Lg5my5yv6jnwGXRwvvkMY8SHmrS9WfYvsvW7YnkDuZd7/ChBQAAAAASUVORK5CYII="></a>
+    <p style="display:inline-block;margin:0;">Original content of this site, except those works that are given appropriate credits, is licensed under a<br> <a rel="license noopener" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+</div>
+  <div class="powered-by">
+    <a href="/cms/cookie-notice">Cookie Notice</a>
+    &nbsp;|&nbsp;
+    <a href="https://github.com/No5972/cms_source" target="_blank" rel="noopener">Site Source</a>
+    &nbsp;|&nbsp;Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 4.2.1 & <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 8.0.0-rc.4
+  </div>
+
+        
+<br>
+<span id="daysCount"></span>
+<script>
+  document.getElementById("daysCount").innerText = " " + parseInt(Math.abs(new Date()  -  new Date("2018-11-14"))  /  1000  /  60  /  60  /24)   + " days since this blog's being founded";
+</script>
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="//unpkg.com/animejs@3.1.0/lib/anime.min.js"></script>
+  <script src="//unpkg.com/medium-zoom@1/dist/medium-zoom.min.js"></script>
+
+
+<script src="//unpkg.com/hexo-theme-next@8.0.0-rc.5/source/js/utils.js"></script>
+  <script src="//unpkg.com/hexo-theme-next@8.0.0-rc.5/source/js/motion.js"></script>
+
+
+<script src="//unpkg.com/hexo-theme-next@8.0.0-rc.5/source/js/next-boot.js"></script>
+
+  
+
+
+
+
+  
+<script src="//unpkg.com/hexo-theme-next@8.0.0-rc.4/source/js/local-search.js"></script>
+
+
+
+<!--
+<div id="landlord">
+    <div class="message" style="opacity:0; left: 10px;"></div>
+    <!-- <canvas id="live2d" width="280" height="550" class="live2d"></canvas> --
+    <iframe src="https://test-review.cdn.bcebos.com/mmd/index.html" frameborder="no" style="width: 100%; height: 100%"></iframe>
+    <div class="hide-button" style="top: 50px !important">隐藏</div>
+</div>
+-->
+
+<script src="https://www.unpkg.com/jquery@3.5.1/dist/jquery.min.js"></script>
+
+<script src="https://unpkg.com/jquery.marquee@1.5.0/jquery.marquee.min.js" type="text/javascript"></script>
+<div class="marquee-container" style="position: fixed; width: 100%; height: 30px; color: black; background-color: white; left: 0; bottom: 0; display: none;">
+<div class="marquee">推进创文常态化 共建文明襄阳城　·　🄽🄾5️⃣9️⃣7️⃣2️⃣　·　做文明襄阳人 建文明襄阳城 凝聚文明正能量 筑梦千年古襄阳　·　🄽🄾5️⃣9️⃣7️⃣2️⃣　·　创建全国文明城市 加快建设汉江流域中心城市　·　🄽🄾5️⃣9️⃣7️⃣2️⃣　·　讲文明 树新风　·　🄽🄾5️⃣9️⃣7️⃣2️⃣　·　用微笑融化陌生 用文明美化襄阳　·　🄽🄾5️⃣9️⃣7️⃣2️⃣　·　争当文明使者 播撒文明新风</div>
+</div>
+<script>$('.marquee').marquee({duration: 25000});</script>
+
+<!-- mmd3d begin -->
+<script type="text/javascript">
+    var message_Path = 'https://fastly.jsdelivr.net/gh/No5972/Live2D@25/live2d/'
+    var home_Path = 'https://no5972.github.io/cms/'  //此处修改为你的域名，必须带斜杠
+</script>
+<script type="text/javascript" src="https://fastly.jsdelivr.net/gh/No5972/Live2D@25/live2d/js/message.js"></script>
+<!-- mmd3d end -->
+
+<!-- public live2d start -->
+<!--
+<script type="text/javascript">
+    var message_Path = 'https://fastly.jsdelivr.net/gh/No5972/Live2D@24/live2d/'
+    var home_Path = 'https://no5972.github.io/cms/'  //此处修改为你的域名，必须带斜杠
+</script>
+<script type="text/javascript" src="https://fastly.jsdelivr.net/gh/No5972/Live2D@11/live2d/js/live2d.js"></script>
+<script type="text/javascript" src="https://fastly.jsdelivr.net/gh/No5972/Live2D@11/live2d/js/message.js"></script>
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<script type="text/javascript">
+    loadlive2d("live2d", "https://fastly.jsdelivr.net/gh/QiShaoXuan/live2DModel@1.0.0/live2d-widget-model-miku/assets/miku.model.json");
+    $("#landlord").draggable();
+</script>
+-->
+<!-- public live2d end -->
+
+
+
+
+<script>
+    $(document).on('mouseenter', 'button:contains(Donate)', function(){
+        $("#post-reward").show();
+    }).on('mouseleave', 'button:contains(Donate)', function(){
+        $("#post-reward").hide();
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+<link rel="stylesheet" href="//unpkg.com/katex@0.15.1/dist/katex.min.css">
+
+
+  
+
+<script>if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/cms/sw.js?t=1755219322578')
+    .then(function () {console.log('ServiceWorker Register Successfully.')})
+    .catch(function (e) {console.error(e)});
+}
+</script></body>
+</html>
